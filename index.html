@@ -1,12 +1,79 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
 <body>
 
-<h1>About Me</h1>
-<h2>Welcome to Maggie's About Me Page!</h2>
-<h3>Hi, I'm Maggie! I'm a college student at the University of Michigan, and I'm trying out the KWK Data Storytelling Challenge as a way to grow my web development and data journalism skills!</h3>
-<p>I'm Maggie. I grew up in a small-ish city called Fairfax, Virginia, a couple miles away from Washington, D.C. I have been a KWK scholar three times over, and have learned so much in my experience! This summer will be my fourth summer as a KWK IA.</p>
-<p>I study data science at the University of Michigan. I am passionate about the ways that data can help people and have long been interested in data journalism! I'm excited to explore it in this KWK challenge. </p>
-<p>Besides coding, I really like dancing, reading, playing the Sims 4, and studying German. At school, I'm also have a minor in German and a minor in Science, Technology, and Society. </p>
+<div class="sidebar">
+  <h3 id = "main">Welcome to Maggie's About Me Page!</h2>
+  <img src = "https://i.pinimg.com/736x/21/2b/7d/212b7d47f55b412f6957490e8eb2aa73.jpg" style="width: 128px"></img>
+  <p id = "main" class = "sbp">Hi, I'm Maggie! I'm a college student at the University of Michigan, and I'm trying out the KWK Data Storytelling Challenge as a way to grow my web development and data journalism skills!</p>
+  <h3>Fun Facts</h3>
+    <ul class = "sbp">
+      <li class = "sbp">I have a 1857 day streak on Duolingo.</li>
+      <li class = "sbp">My favorite book is <i class = "sbp">Little Women</i> by Louisa May Alcott. </li>
+      <li class = "sbp">I did tap dancing for 4 years!</li>
+    </ul>
+</div>
+
+<div class = center>
+  <h1>About Me</h1>
+<article class="about">
+    <p>I'm Maggie. I grew up in a small-ish city called Fairfax, Virginia, a couple miles away from Washington, D.C. I have been a KWK scholar three times over, and have learned so much in my experience! This summer will be my fourth summer as a KWK IA.</p>
+    <p>I study data science at the University of Michigan. I am passionate about the ways that data can help people and have long been interested in data journalism! I'm excited to explore it in this KWK challenge. </p>
+    <p>Besides coding, I really like dancing, reading, playing the Sims 4, and studying German. At school, I'm also have a minor in German and a minor in Science, Technology, and Society. </p>
+    <p>I started at Kode With Klossy in 2019 at the Washington, D.C. camp! From there, I did camps in 2020 and 2021 before becoming an IA in 2022. This is my fourth summer as an IA for KWK, and I'm so excited to work with KWK for this virtual challenge! </p>
+    <h2>Links to understand me!</h2>
+    <ul>
+      <li><a href = "https://www.sciencedirect.com/topics/social-sciences/science-and-technology-studies">What is Science, Technology, and Society? </a></li>
+      <li><a href = "https://www.responsible-investor.com/leveraging-data-science-and-ai-to-promote-social-justice-sustainability-and-equity/">How can studying data science help others?</a></li>
+      <li><a href = "https://www.nytimes.com/2019/07/19/travel/berlin-audre-lorde.html">Interesting information about German diversity in the later 20th century!</a></li>
+      <li><a href = "https://www.smithsonianmag.com/smithsonian-institution/why-little-women-endures-150-years-later-180970303/">Why I'm still talking about Little Women</a></li>
+    </ul>
+  </article>
+
+<div class="container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 3</div>
+      <div class = "active"> </div><img src="https://i.pinimg.com/736x/59/fc/1b/59fc1b212c614cc3068d66cf83e5b1d3.jpg" style="width:100%"> </div>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 3</div>
+      <img src="https://i.pinimg.com/736x/4a/b4/01/4ab40192e2d4c84c4920c04b3fa86678.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 3</div>
+      <img src="https://i.pinimg.com/736x/d1/23/27/d1232716aab7e918156166a51ca2d257.jpg" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+<!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="https://i.pinimg.com/736x/59/fc/1b/59fc1b212c614cc3068d66cf83e5b1d3.jpg" style="width:100%" onclick="currentSlide(1)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.pinimg.com/736x/4a/b4/01/4ab40192e2d4c84c4920c04b3fa86678.jpg" style="width:100%" onclick="currentSlide(2)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.pinimg.com/736x/d1/23/27/d1232716aab7e918156166a51ca2d257.jpg" style="width:100%" onclick="currentSlide(3)">
+    </div>
+</div>
+</div>
+</div>
+</div>
+
 </body>
 </html>
